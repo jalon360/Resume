@@ -22,27 +22,37 @@ body {
 /* Container for Profile Photo */
 .profile-photo {
     display: flex;
-    justify-content: flex; /* Aligns the child element (image) to the right */
+    justify-content: flex-start; /* Aligns the child element (image) to the left */
     margin-bottom: 20px; /* Adds some space below the image */
 }
 
 /* Profile Photo */
 .profile-photo img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin-left: 20px; /* Left align with 20px margin */
 }
 
-
+.contact-photo-layout {
+    display: flex;
+    align-items: center;
+    /* This will put space between the photo and the contact section */
+    gap: 100px; /* Adjust the space between the photo and the contact section */
+}
 
 /* Section Styling */
 section {
     margin-bottom: 20px;
 }
+h1 {
+    color: #000000;
 
+    margin-left: 35px;
+    
+}
 h2 {
     color: #007bff;
     margin-bottom: 10px;
@@ -70,8 +80,22 @@ p, li {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .profile-photo img,
+    .contact-photo-layout {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .profile-photo img {
-        width: 100px;
-        height: 100px;
+        width: 150px; /* Adjust size for smaller screens */
+        height: 150px;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .contact-photo-layout {
+        gap: 20px;
     }
 }
