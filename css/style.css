@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.nav-link {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+/* Container for Profile Photo */
+.profile-photo {
+    display: flex;
+    justify-content: flex; /* Aligns the child element (image) to the right */
+    margin-bottom: 20px; /* Adds some space below the image */
+}
+
+/* Profile Photo */
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-left: 20px; /* Left align with 20px margin */
+}
+
+
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Experience, Projects, and Organizations */
+h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+p, li {
+    color: #555;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
